@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine 
+VOLUME /tmp 
+COPY target/rateboard-app-0.0.1-SNAPSHOT.jar RateBoard.jar 
+ENTRYPOINT ["java","-jar","RateBoard.jar"] 
